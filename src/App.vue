@@ -55,7 +55,8 @@
           getAssets() {
             console.log(this.borrower.student_id);
             const options = {
-              url: 'https://dca.durhamcollege.ca/~gubalaraymond/signout/dynamic_site/services/get_assets.php',
+              //url: 'https://dca.durhamcollege.ca/~gubalaraymond/signout/dynamic_site/services/get_assets.php',
+              url: 'https://dca.durhamcollege.ca/~sacklerstuart/services/get_assets.php',
               method: 'POST',
               data: {
                 student_id: this.student_id
@@ -87,7 +88,8 @@
             console.log(e.student_id);
             //this.student_id = e.student_id;
             const options = {
-              url: 'https://dca.durhamcollege.ca/~gubalaraymond/signout/dynamic_site/services/login.php',
+              //url: 'https://dca.durhamcollege.ca/~gubalaraymond/signout/dynamic_site/services/login.php',
+              url: 'https://dca.durhamcollege.ca/~sacklerstuart/services/login.php',
               method: 'POST',
               data: {
                 student_id: e.student_id,
